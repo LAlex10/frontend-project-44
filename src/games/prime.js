@@ -1,7 +1,6 @@
 import game from '../index.js';
 
-const description = 'Answer "yes" if given number is prime. Otherwise answer "no."';
-
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 function isPrime(num) {
   if (num <= 1) return false;
   for (let i = 2; i <= Math.sqrt(num); i += 1) {
