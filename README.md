@@ -14,7 +14,7 @@
 5. Игра: "Простое ли число?" - Пользователю показывается случайное число. И ему нужно ответить yes, если число простое, или no — если не простое.
 запуск: brain-prime.
 
-Минимальные требования: Процессор с частотой около 1-2 ГГц, минимум 256 МБ RAM, но рекомендуется 512 МБ для лучшей производительности, минимальный размер экрана 800x600 пикселей, поддержка JavaScript в браузере. Клавиатура.
+Минимальные требования: Nodejs v22.9.0.
 
 <a href="https://asciinema.org/a/nxdJy8aI9NHoRPTdYbg9kMIDb" target="_blank"><img src="https://asciinema.org/a/nxdJy8aI9NHoRPTdYbg9kMIDb.svg" /></a>
 <a href="https://asciinema.org/a/vjiaWxEhfTnpmGEruIv5n4TuU" target="_blank"><img src="https://asciinema.org/a/vjiaWxEhfTnpmGEruIv5n4TuU.svg" /></a>
