@@ -1,15 +1,11 @@
 import game from '../index.js';
+import randomInteger from '../genRandomNum.js';
 
 const description = 'What is the result of the expression?';
 
 function getRandomOperator() {
   const operators = ['+', '-', '*'];
   return operators[Math.floor(Math.random() * operators.length)];
-}
-
-function randomInteger(min, max) {
-  const rand = min + Math.random() * (max + 1 - min);
-  return Math.floor(rand);
 }
 
 function calculate(num1, operator, num2) {
