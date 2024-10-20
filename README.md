@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/LAlex10/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/LAlex10/frontend-project-44/actions)
-<a href="https://codeclimate.com/github/LAlex10/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/efde465fe4dac99637c0/maintainability" /></a>
-ПРОЕКТ "ИГРЫ РАЗУМА"
+<a href="https://codeclimate.com/github/LAlex10/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/efde465fe4dac99637c0/maintainability" /></a>/n
+<h1>ПРОЕКТ "ИГРЫ РАЗУМА"</h1>
 Содержит в себе 5 мини-игр:
 1. Игра: "Проверка на чётность" - Пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное.
 запуск: brain-even.
@@ -14,7 +14,7 @@
 5. Игра: "Простое ли число?" - Пользователю показывается случайное число. И ему нужно ответить yes, если число простое, или no — если не простое.
 запуск: brain-prime.
 
-Минимальные требования: Nodejs v22.9.0.
+Минимальные требования: Nodejs v22.9.0. <h3>Setup:</h3><h4>make install</h4> 
 
 <a href="https://asciinema.org/a/nxdJy8aI9NHoRPTdYbg9kMIDb" target="_blank"><img src="https://asciinema.org/a/nxdJy8aI9NHoRPTdYbg9kMIDb.svg" /></a>
 <a href="https://asciinema.org/a/vjiaWxEhfTnpmGEruIv5n4TuU" target="_blank"><img src="https://asciinema.org/a/vjiaWxEhfTnpmGEruIv5n4TuU.svg" /></a>
