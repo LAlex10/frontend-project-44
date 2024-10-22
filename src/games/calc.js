@@ -1,11 +1,11 @@
 import game from '../index.js';
-import randomInteger from '../genRandomNum.js';
+import generateRandomNumber from '../generateRandomNumber.js';
 
 const description = 'What is the result of the expression?';
 
 function getRandomOperator() {
   const operators = ['+', '-', '*'];
-  return operators[Math.floor(Math.random() * operators.length)];
+  return operators[generateRandomNumber(0, 2)];
 }
 
 function calculate(num1, operator, num2) {
@@ -17,13 +17,13 @@ function calculate(num1, operator, num2) {
     case '*':
       return num1 * num2;
     default:
-      return ('Unexpected operator');
+      throw new Error('Unexpected operator');
   }
 }
 
 const getQuestAndAnsw = () => {
-  const num1 = randomInteger(1, 99);
-  const num2 = randomInteger(1, 99);
+  const num1 = generateRandomNumber(1, 99);
+  const num2 = generateRandomNumber(1, 99);
   const operator = getRandomOperator();
   const question = `${num1} ${operator} ${num2}`;
   const correctAnswer = calculate(num1, operator, num2).toString();
