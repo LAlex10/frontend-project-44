@@ -5,7 +5,7 @@ const description = 'What is the result of the expression?';
 
 function getRandomOperator() {
   const operators = ['+', '-', '*'];
-  return operators[generateRandomNumber(0, 2)];
+  return operators[generateRandomNumber(0, operators.length - 1)];
 }
 
 function calculate(num1, operator, num2) {

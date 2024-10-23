@@ -3,37 +3,23 @@ import generateRandomNumber from '../generateRandomNumber.js';
 
 const description = 'What number is missing in the progression?';
 
-function getRandomValues() {
-  return {
-    start: generateRandomNumber(1, 20),
-    step: generateRandomNumber(1, 5),
-    hiddenIndex: generateRandomNumber(0, 9),
-  };
-}
-
-function generateProgression({ start, step, hiddenIndex }) {
-  const progression = [];
-  const result = [];
-  for (let i = 0; i < 10; i += 1) {
-    if (i === hiddenIndex) {
-      progression.push(start + i * step);
-      result.push('..');
-    } else {
-      progression.push(start + i * step);
-      result.push(start + i * step);
-    }
+function generateProgression(num, length, step) {
+  const progression = [num];
+  for (let i = 0; i < length; i += 1) {
+    progression.push(progression[i] + step);
   }
-
-  return {
-    result, progression,
-  };
+  return progression;
 }
 
 function getQuestAndAnsw() {
-  const { start, step, hiddenIndex } = getRandomValues();
-  const { progression, result } = generateProgression({ start, step, hiddenIndex });
+  const progressionLength = generateRandomNumber(9, 9);
+  const stepNum = generateRandomNumber(1, 5);
+  const hiddenIndex = generateRandomNumber(0, progressionLength);
+  const startNum = generateRandomNumber();
+  const progression = generateProgression(startNum, progressionLength, stepNum);
   const correctAnswer = progression[hiddenIndex].toString();
-  const question = result.join(' ');
+  progression[hiddenIndex] = '..';
+  const question = progression.join(' ');
   return [question, correctAnswer];
 }
 export default () => {
